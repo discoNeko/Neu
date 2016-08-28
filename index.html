@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+<title>ノイ</title>
+</head>
+<link rel='stylesheet' href='style.css' />
+<body align="center" bgcolor="#999" style="font-family: 'Meiryo'">
+<p style="margin-top:1.5em;">
+<canvas id="canvas" width='800' height='600'></canvas>
+<script src='main.js'></script>
+</p>
+<p>
+<div>
+<a href="https://ja.wikipedia.org/wiki/%E3%83%8E%E3%82%A4" target="_blank" class="btn sample">ノイ とは</a>
+<a href="#" class="btn sample" onclick="tips(2); return false;">遊び方</a>
+<a href="#" class="btn sample" onclick="tips(3); return false;">参考</a>
+</div>
+</p>
+<div id="tips">
+</div>
+<script>
+function tips(n){
+	if(n==1){
+		document.getElementById("tips").innerHTML= ""
+	}else if(n==2){
+		document.getElementById("tips").innerHTML= ""
+	}else{
+		document.getElementById("tips").innerHTML= ""
+	}
+}
+</script><p>
+<div>Copyright(c) 2016 <a href="https://github.com/discoNeko" target="_blank">discoNeko</a>.</div></p>
+</body>
+</html>

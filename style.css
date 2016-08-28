@@ -1,0 +1,45 @@
+canvas{
+	display: block;
+	margin: auto;
+}
+a.btn{
+	border-radius:5%;
+	display: inline-block;
+	width: 120px;
+	margin: 15px 20px 20px;
+	padding: 15px 10px;
+	border: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1;
+	transition: .3s;
+}
+a.sample{
+	position:relative;
+	z-index:2;
+	overflow:hidden
+}
+a.sample::after{
+	display:block;
+	content:"";
+	position:absolute;
+	z-index:-1;
+	top:50%;
+	left:50%;
+	width:0;
+	height:0;
+	margin:0;
+	border-radius:50%;
+	background:#fff;
+	transition:.3s
+}
+a.sample:hover{
+	color:#555
+}
+a.sample:hover::after{
+	width:150px;
+	height:150px;
+	margin:-75px 0 0 -75px
+}
